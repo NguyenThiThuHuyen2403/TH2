@@ -1,0 +1,18 @@
+﻿@model List<SachOnline.Models.SACH>
+<div>
+    <h2 style="text-align: center">SÁCH BÁN NHIỀU</h2>
+    <div class="Con-book">
+        @foreach (var item in Model)
+        {
+        <div class="book-info">
+            <img src="~/Images/Sach/@item.HinhMinhHoa" />
+            <div>
+                <p style="font-size: 25px;"> @item.TenSach </p>
+                <p>
+                    @item.MoTa
+                </p>
+            </div>
+        </div>
+         }
+    </div>
+</div>
